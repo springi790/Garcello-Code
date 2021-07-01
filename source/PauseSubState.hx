@@ -21,8 +21,9 @@ class PauseSubState extends MusicBeatSubstate
 {
 	var grpMenuShit:FlxTypedGroup<Alphabet>;
 
-	var menuItems:Array<String> = ['Resume', 'Restart Song', 'Exit to menu'];
+	var menuItems:Array<String> = ['Resume', 'Restart Song', 'Change Difficulty', 'Exit to menu'];
 	var curSelected:Int = 0;
+	var pageTitle:String = "Normal";
 
 	var pauseMusic:FlxSound;
 	var perSongOffset:FlxText;
@@ -57,6 +58,7 @@ class PauseSubState extends MusicBeatSubstate
 		levelDifficulty.setFormat(Paths.font('vcr.ttf'), 32);
 		levelDifficulty.updateHitbox();
 		add(levelDifficulty);
+
 
 		levelDifficulty.alpha = 0;
 		levelInfo.alpha = 0;
@@ -243,4 +245,6 @@ class PauseSubState extends MusicBeatSubstate
 			}
 		}
 	}
-}
+			}
+        
+	

@@ -3693,7 +3693,12 @@ class PlayState extends MusicBeatState
 					dad.playAnim('garFarewell', true);
 				}
 			}
-	
+			if (SONG.song.toLowerCase() == 'release')
+		
+				if (curStep == 838)
+				 {
+					dad.animation.play('garTightBars');
+				 }
 			if (dad.curCharacter == 'garcelloghosty' && SONG.song.toLowerCase() == 'fading')
 			{
 				if (curStep == 240)

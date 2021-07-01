@@ -244,7 +244,7 @@ class Character extends FlxSprite
 				animation.addByPrefix('singDOWN', 'garcello Sing Note DOWN', 24);
 				animation.addByPrefix('singLEFT', 'garcello Sing Note LEFT', 24);
 
-				animation.addByPrefix('garTightBars', 'garcello coolguy', 15);
+				animation.addByPrefix('garTightBars', 'garcello coolguy', 24);
 
 				addOffset('idle');
 				addOffset("singUP", 0, 0);
@@ -272,7 +272,7 @@ class Character extends FlxSprite
 				addOffset("singRIGHT", 0, 0);
 				addOffset("singLEFT", 0, 0);
 				addOffset("singDOWN", 0, 0);
-				addOffset("garTightBars", 0, 0);
+				addOffset("garFarewell", 0, 0);
 
 				playAnim('idle');
 
